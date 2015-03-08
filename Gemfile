@@ -43,3 +43,12 @@ group :development, :test do
   gem 'spring'
 end
 
+
+
+# User the 'thin' server instead of the default webrick
+gem 'thin'
+
+# Use postgres and the Heroku rails gem for Heroku
+group :production do
+  gem 'rails_12factor'
+end
