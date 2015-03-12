@@ -46,8 +46,8 @@ group :development, :test do
   gem 'faker'
 end
 
-
-
+gem 'carrierwave'
+gem 'mini_magick'
 # User the 'thin' server instead of the default webrick
 gem 'thin'
 
