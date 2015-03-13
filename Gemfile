@@ -42,10 +42,11 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'sqlite3'
   gem 'faker'
 end
 
+gem 'fog'
+gem 'dotenv-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 # User the 'thin' server instead of the default webrick
