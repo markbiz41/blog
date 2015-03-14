@@ -6,6 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+user = User.create(
+  name: "alice", email: "alice44@gmail.com", password: "nicealice"
+)
+
 categories = []
 categories << Category.create(
   name: Faker::Commerce.department
@@ -22,12 +26,14 @@ categories.each do |category|
     post = Post.create(
       title: Faker::Lorem.sentence,
       content: Faker::Lorem.paragraph,
-      category: category
+      category: category,
+      user: user
     )
     5.times do
       comment = Comment.create(
         content: Faker::Lorem.sentence,
-        post: post
+        post: post,
+        user: user
       )
     end
   end

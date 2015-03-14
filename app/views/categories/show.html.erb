@@ -5,8 +5,8 @@
   <%= @category.name %>
 </p>
 
-<% @category.posts.each do |post| %>
-  <%= render 'posts/post', post: post %>  <br/> 
+<% @posts.each do |post| %>
+  <%= render 'posts/post', post: post %>  <br/>
 <% end %>
 
 
