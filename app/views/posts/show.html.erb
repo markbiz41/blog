@@ -20,6 +20,12 @@
   <%= @post.category.name %>
 </p>
 
+
+<p>
+  <strong>Author:</strong>
+  <%= @post.user.name %>
+</p>
+
 <h2>Comments</h2>
 
 <% @post.comments.each do |comment| %>

@@ -44,7 +44,7 @@ group :development, :test do
 
 end
 
-
+gem 'activeadmin', github: 'activeadmin'
 gem 'faker'
 gem 'fog'
 gem 'dotenv-rails'
